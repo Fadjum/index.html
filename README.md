@@ -50,11 +50,11 @@
     }
 
     .header img {
-      height: 70px;
-      width: 70px;
-      object-fit: contain;
-      border-radius: 10px;
-    }
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
     .header h1 {
       font-size: 26px;
