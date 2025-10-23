@@ -1,188 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eritage ENT Care – Entebbe | Expert ENT Services</title>
-  <meta name="description" content="Eritage ENT Care – Entebbe offers expert Ear, Nose & Throat services for all ages. Visit us today or call +256769616091 for professional ENT care.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Website</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #f8fafc;
-      color: #1e293b;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000;
     }
 
-    header {
-      background-color: #0369a1;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-      font-weight: 300;
-    }
-
-    nav {
+    /* Top bar */
+    .top-bar {
       display: flex;
-      justify-content: center;
-      gap: 1rem;
-      background-color: #0284c7;
-      padding: 0.8rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #e6f4e6; /* pale green */
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    nav a {
-      color: white;
+    .top-bar a {
       text-decoration: none;
-      font-weight: 500;
+      color: #000;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background-color: #c8e6c9; /* slightly deeper pale green */
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    .top-bar a:hover {
+      background-color: #b2d8b3;
     }
 
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 1000px;
-      margin: auto;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+      background-color: #e6f4e6;
     }
 
-    .intro {
-      text-align: center;
+    .header img {
+      height: 70px;
+      width: 70px;
+      object-fit: contain;
+      border-radius: 10px;
     }
 
-    .intro h2 {
-      color: #0369a1;
-      margin-bottom: 1rem;
+    .header h1 {
+      font-size: 26px;
+      color: #000;
+      margin: 0;
+      font-weight: bold;
     }
 
-    .intro p {
-      line-height: 1.6;
-      font-size: 1.1rem;
+    .main-image {
+      width: 100%;
+      height: auto;
     }
 
     .services {
-      background-color: #e0f2fe;
-      border-radius: 10px;
-      padding: 2rem;
-      margin-top: 2rem;
+      padding: 30px 20px;
     }
 
-    .services h3 {
-      color: #0369a1;
-      margin-bottom: 1rem;
+    .services h2 {
       text-align: center;
-    }
-
-    .services ul {
-      list-style-type: none;
-      padding: 0;
-      line-height: 1.8;
-      font-size: 1.05rem;
-    }
-
-    .contact {
-      text-align: center;
-      margin-top: 3rem;
-    }
-
-    .contact h3 {
-      color: #0369a1;
-      margin-bottom: 1rem;
-    }
-
-    .contact p {
-      font-size: 1.1rem;
-      margin: 0.3rem 0;
-    }
-
-    .whatsapp-button {
+      color: #000;
+      background-color: #e6f4e6;
       display: inline-block;
-      margin-top: 1rem;
-      background-color: #25D366;
-      color: white;
-      padding: 0.8rem 1.5rem;
+      padding: 6px 14px;
       border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s ease;
     }
 
-    .whatsapp-button:hover {
-      background-color: #1da851;
+    .service-list {
+      margin-top: 15px;
+      list-style-type: square;
+      font-weight: bold;
     }
 
-    footer {
-      text-align: center;
-      background-color: #0369a1;
-      color: white;
-      padding: 1.2rem;
-      margin-top: 3rem;
-      font-size: 0.95rem;
+    .service-description {
+      margin-top: 30px;
+      line-height: 1.6;
+      font-size: 15px;
     }
 
-    footer a {
-      color: #e0f2fe;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
+    .icon {
+      width: 18px;
+      height: 18px;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Eritage ENT Care – Entebbe</h1>
-    <p>Expert Ear, Nose & Throat Care You Can Trust</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Top bar with buttons -->
+  <div class="top-bar">
+    <a href="tel:+256769616091">
+      📞 Call Us
+    </a>
+    <a href="https://wa.me/256740166778" target="_blank">
+      💬 Message Us
+    </a>
+  </div>
 
-  <section id="about" class="intro">
-    <h2>Welcome to Eritage ENT Care – Entebbe</h2>
-    <p>We provide high-quality ENT services for both adults and children. Our clinic focuses on accurate diagnosis and effective treatment for all ear, nose, and throat conditions. At Eritage ENT Care, your health, hearing, and comfort come first.</p>
-  </section>
+  <!-- Header with logo and clinic name -->
+  <div class="header">
+    <img src="https://raw.githubusercontent.com/Fadjum/index.html/f518c4c36f248bec715d42c160fec4068cc7a215/file_00000000398861f891d77ab42db18689%20(1).png" alt="Clinic Logo">
+    <h1>Your Clinic Name Here</h1>
+  </div>
 
-  <section id="services" class="services">
-    <h3>Our Services</h3>
-    <ul>
-      <li>✅ Ear infections and hearing assessment</li>
-      <li>✅ Nasal congestion, allergies & sinusitis management</li>
-      <li>✅ Throat infections and voice disorder treatment</li>
-      <li>✅ Minor ENT procedures and ear wax removal</li>
-      <li>✅ Endoscopic sinus and ear evaluation</li>
-      <li>✅ ENT check-up for both adults and children</li>
+  <!-- Main ENT image -->
+  <img class="main-image" src="https://raw.githubusercontent.com/Fadjum/index.html/0723b694988e6a5d2730ee4d8b1bae67ce2721aa/images%20(41).jpeg" alt="ENT Main Image">
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul class="service-list">
+      <li>Ear Cleaning & Wax Removal</li>
+      <li>Hearing Assessment</li>
+      <li>Sinus & Allergy Management</li>
+      <li>Tonsil & Throat Treatment</li>
+      <li>Nasal Obstruction Evaluation</li>
+      <li>ENT Consultations</li>
     </ul>
+
+    <!-- Detailed Descriptions Placeholder -->
+    <div class="service-description">
+      <p><strong>Ear Cleaning & Wax Removal:</strong> Detailed description will go here...</p>
+      <p><strong>Hearing Assessment:</strong> Detailed description will go here...</p>
+      <p><strong>Sinus & Allergy Management:</strong> Detailed description will go here...</p>
+      <p><strong>Tonsil & Throat Treatment:</strong> Detailed description will go here...</p>
+      <p><strong>Nasal Obstruction Evaluation:</strong> Detailed description will go here...</p>
+      <p><strong>ENT Consultations:</strong> Detailed description will go here...</p>
+    </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h3>Contact Us</h3>
-    <p><strong>📍 Location:</strong> Entebbe, Uganda</p>
-    <p><strong>📞 Phone:</strong> +256769616091</p>
-    <p><strong>💬 WhatsApp:</strong> <a class="whatsapp-button" href="https://wa.me/256740166778" target="_blank">Chat on WhatsApp</a></p>
-    <p><strong>✉️ Email:</strong> <a href="mailto:abalubega9@gmail.com">abalubega9@gmail.com</a></p>
-    <p><strong>🌐 Website:</strong> <a href="https://trendexhub.com" target="_blank">trendexhub.com</a></p>
-    <p><strong>🕒 Open:</strong> Monday – Saturday, 8:00 AM – 6:00 PM</p>
-  </section>
-
-  <footer>
-    <p>© <script>document.write(new Date().getFullYear());</script> Eritage ENT Care – Entebbe | All Rights Reserved</p>
-    <p>Developed & hosted by <a href="https://github.com/" target="_blank">GitHub Pages</a></p>
-  </footer>
 </body>
 </html>
