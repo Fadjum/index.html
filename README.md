@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clinic Website</title>
+  <title>Eritage ENT Care – Entebbe</title>
   <style>
     body {
       margin: 0;
@@ -40,6 +40,7 @@
       background-color: #b2d8b3;
     }
 
+    /* Header with logo */
     .header {
       display: flex;
       align-items: center;
@@ -50,17 +51,18 @@
     }
 
     .header img {
-  height: 48px;
-  width: 48px;
-  object-fit: cover;
-  border-radius: 50%;
-}
+      height: 48px;
+      width: 48px;
+      object-fit: cover;
+      border-radius: 50%; /* makes the logo circular */
+    }
 
     .header h1 {
       font-size: 26px;
       color: #000;
       margin: 0;
       font-weight: bold;
+      text-align: center;
     }
 
     .main-image {
@@ -92,29 +94,20 @@
       line-height: 1.6;
       font-size: 15px;
     }
-
-    .icon {
-      width: 18px;
-      height: 18px;
-    }
   </style>
 </head>
 <body>
 
   <!-- Top bar with buttons -->
   <div class="top-bar">
-    <a href="tel:+256769616091">
-      📞 Call Us
-    </a>
-    <a href="https://wa.me/256740166778" target="_blank">
-      💬 Message Us
-    </a>
+    <a href="tel:+256769616091">📞 Call Us</a>
+    <a href="https://wa.me/256740166778" target="_blank">💬 Message Us</a>
   </div>
 
   <!-- Header with logo and clinic name -->
   <div class="header">
-    <img src="https://raw.githubusercontent.com/Fadjum/index.html/f518c4c36f248bec715d42c160fec4068cc7a215/file_00000000398861f891d77ab42db18689%20(1).png" alt="Clinic Logo">
-    <h1>Your Clinic Name Here</h1>
+    <img src="https://raw.githubusercontent.com/Fadjum/index.html/f518c4c36f248bec715d42c160fec4068cc7a215/file_00000000398861f891d77ab42db18689%20(1).png" alt="Eritage ENT Care Logo">
+    <h1>Eritage ENT Care – Entebbe</h1>
   </div>
 
   <!-- Main ENT image -->
