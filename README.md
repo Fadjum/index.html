@@ -23,9 +23,9 @@
     
 
 header img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border-radius: 30%;
       position: absolute;
       left: 1rem;
       top: 1rem;
