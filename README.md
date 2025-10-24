@@ -20,7 +20,9 @@
       position: relative;
     }
 
-    header img {
+    
+
+header img {
       width: 70px;
       height: 70px;
       border-radius: 50%;
