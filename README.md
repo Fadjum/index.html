@@ -1,52 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eritage ENT Care – Entebbe</title>
   <style>
-    /* General Header Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header Section */
     header {
+      background-color: #00509e;
+      color: white;
+      padding: 1.5rem 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #00509e;
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
       flex-wrap: wrap;
-      text-align: center;
+      border-bottom: 4px solid #003c7a;
     }
 
     header img {
-      height: 55px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
       margin-right: 15px;
-      border-radius: 10px;
       border: 2px solid white;
+    }
+
+    header div {
+      text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 26px;
+      font-size: 1.9rem;
       font-weight: bold;
     }
 
     header p {
-      margin: 4px 0;
-      font-size: 15px;
+      font-size: 1rem;
+      margin-top: 0.3rem;
+      opacity: 0.95;
     }
 
     .contacts {
       margin-top: 6px;
-      font-size: 14px;
+      font-size: 0.95rem;
     }
 
     .contacts a {
       color: white;
       text-decoration: none;
-      margin: 0 5px;
+      margin: 0 4px;
     }
 
     .contacts a:hover {
       text-decoration: underline;
     }
 
-    /* Hero Section */
+    /* Hero Image */
     .hero {
       text-align: center;
     }
@@ -77,7 +94,7 @@
       padding-left: 1.5rem;
     }
 
-    /* Footer Styling */
+    /* Footer */
     footer {
       background-color: #00509e;
       color: white;
@@ -101,7 +118,6 @@
     }
   </style>
 </head>
-
 <body>
 
   <header>
@@ -110,8 +126,7 @@
       <h1>Eritage ENT Care – Entebbe</h1>
       <p>Specialized Ear, Nose & Throat Clinic</p>
       <div class="contacts">
-        📞 <a href="tel:+256769616091">+256769616091</a> | 
-        <a href="tel:+256740166778">+256740166778</a>
+        📞 <a href="tel:+256769616091">+256769616091</a> | <a href="tel:+256740166778">+256740166778</a>
       </div>
     </div>
   </header>
@@ -119,3 +134,41 @@
   <div class="hero">
     <img src="https://github.com/Fadjum/index.html/blob/0723b694988e6a5d2730ee4d8b1bae67ce2721aa/images%20(41).jpeg?raw=true" alt="Clinic Main Image">
   </div>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Eritage ENT Care – Entebbe</strong>, we provide expert medical services for conditions affecting
+      the ear, nose, and throat. Our clinic offers compassionate care, accurate diagnosis, and modern ENT procedures.
+      With a professional team led by qualified specialists, we ensure every patient receives personal attention and lasting relief.
+    </p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Ear infection and wax removal</li>
+      <li>Hearing loss evaluation and treatment</li>
+      <li>Sinusitis and allergic rhinitis management</li>
+      <li>Tonsillitis and throat infection treatment</li>
+      <li>Snoring and sleep apnea evaluation</li>
+      <li>Endoscopic nasal and throat examination</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact & Location</h2>
+    <p>
+      📍 Entebbe Town, Uganda<br>
+      📞 +256 705 532 919<br>
+      ✉️ heritageentcare@gmail.com
+    </p>
+    <a href="https://maps.google.com" target="_blank">View on Google Maps</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Eritage ENT Care – Entebbe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
