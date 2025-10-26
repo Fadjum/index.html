@@ -1,14 +1,10 @@
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eritage ENT Care </title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f8f9fa;
-      color: #333;
+<header style="display: flex; align-items: center; justify-content: center; background-color: #0d6efd; padding: 15px; color: white; border-radius: 10px;">
+  <img src="logo.png" alt="Eritage ENT Care Logo" style="height: 50px; margin-right: 15px; border-radius: 8px;">
+  <div>
+    <h1 style="margin: 0; font-size: 24px;">Eritage ENT Care – Entebbe</h1>
+    <p style="margin: 0; font-size: 14px;">Specialized Ear, Nose & Throat Clinic</p>
+  </div>
+</header>
     }
 
     header {
