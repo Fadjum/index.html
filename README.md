@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eritage ENT Care – Entebbe</title>
+  <title>Eritage ENT Care </title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -23,8 +22,8 @@
     
 
 header img {
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
       border-radius: 30%;
       position: absolute;
       left: 1rem;
