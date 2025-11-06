@@ -1,184 +1,85 @@
+import { Button } from "@/components/ui/button";
+import { Calendar, Phone } from "lucide-react";
+import heroImage from "@/assets/hero-ent-clinic.jpg";
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eritage ENT Care – Entebbe</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f8f9fa;
-      color: #333;
-    }
+const Hero = () => {
+  return (
+    <section className="relative overflow-hidden min-h-[600px] lg:min-h-[700px]">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="ERITAGE ENT CARE Clinic Building"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/50 to-background/20"></div>
+      </div>
+{/* Content */}
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-12 lg:pt-0 lg:pb-16">
+        <div className="max-w-2xl">
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-foreground leading-tight">
+                Expert ENT Care in{" "}
+                <span className="text-primary">Entebbe</span>
+              </h1>
+              <p className="text-lg sm:text-xl text-muted-foreground font-sans">
+                Professional treatment for ear, nose, and throat conditions. 
+                Experienced specialist care for adults and children in a modern, 
+                comfortable clinic environment.
+              </p>
+            </div>
 
-    /* Header Section */
-    header {
-      background-color: #00509e;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 4px solid #003c7a;
-    }
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="text-lg" asChild>
+                <a href="#contact">
+                  <Calendar className="mr-2 h-5 w-5" />
+                  Book Appointment
+                </a>
+              </Button>
+              <div className="flex flex-col gap-2">
+                <Button size="lg" variant="outline" className="text-lg" asChild>
+                  <a href="tel:+256740166788">
+                    <Phone className="mr-2 h-5 w-5" />
+                    +256 740 166 788
+                  </a>
+                </Button>
+                <Button size="lg" variant="outline" className="text-lg" asChild>
+                  <a href="tel:+256769616091">
+                    <Phone className="mr-2 h-5 w-5" />
+                    +256 769 616 091
+                  </a>
+                </Button>
+              </div>
+            </div>
 
-    header img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      margin-bottom: 1rem;
-      border-radius: 0;
-      border: none;
-    }
+            <div className="pt-8 border-t border-border">
+              <div className="grid grid-cols-3 gap-8">
+                <div>
+                  <div className="text-3xl font-bold text-primary">15+</div>
+                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-primary">5000+</div>
+                  <div className="text-sm text-muted-foreground">Patients Treated</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-primary">98%</div>
+                  <div className="text-sm text-muted-foreground">Satisfaction Rate</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
+        {/* Open Hours Badge */}
+        <div className="absolute bottom-8 left-8 bg-primary text-primary-foreground p-6 rounded-xl shadow-xl hidden sm:block">
+          <div className="text-sm font-medium">Open Hours</div>
+          <div className="text-xl font-bold">Mon - Sat: 9AM - 6PM</div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      opacity: 0.95;
-    }
-
-    .contacts {
-      margin-top: 10px;
-      font-size: 1rem;
-    }
-
-    .contacts a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .contacts a:hover {
-      text-decoration: underline;
-    }
-
-    /* Hero Image */
-    .hero {
-      text-align: center;
-    }
-
-    .hero img {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-      border-bottom: 3px solid #00509e;
-    }
-
-    /* Section Styling */
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section h2 {
-      color: #00509e;
-      border-bottom: 2px solid #00509e;
-      display: inline-block;
-      margin-bottom: 0.5rem;
-    }
-
-    .services ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
-
-    .testimonials blockquote {
-      font-style: italic;
-      margin: 1rem 0;
-      padding-left: 1rem;
-      border-left: 4px solid #00509e;
-    }
-
-    .contact a {
-      background-color: #00509e;
-      color: white;
-      text-decoration: none;
-      padding: 0.7rem 1.5rem;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-
-    .contact a:hover {
-      background-color: #003c7a;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #00509e;
-      color: white;
-      text-align: center;
-      padding: 1rem 0;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="https://www.entcentergr.com/wp-content/uploads/2019/07/ENT-Center-Logo.png" alt="Eritage ENT Care Logo">
-    <h1>Eritage ENT Care – Entebbe</h1>
-    <p>Specialized Ear, Nose & Throat Clinic</p>
-    <div class="contacts">
-      📞 <a href="tel:+256769616091">+256 769 616 091</a> | <a href="tel:+256740166778">+256 740 166 778</a>
-    </div>
-  </header>
-
-  <div class="hero">
-    <img src="https://www.entcentergr.com/wp-content/uploads/2019/07/ENT-Center-Interior.jpg" alt="Clinic Main Image">
-  </div>
-
-  <section class="about">
-    <h2>About Us</h2>
-    <p>
-      At <strong>Eritage ENT Care – Entebbe</strong>, we provide expert medical services for conditions affecting
-      the ear, nose, and throat. Our clinic offers compassionate care, accurate diagnosis, and modern ENT procedures.
-      With a professional team led by qualified specialists, we ensure every patient receives personal attention and lasting relief.
-    </p>
-  </section>
-
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Ear infection and wax removal</li>
-      <li>Hearing loss evaluation and treatment</li>
-      <li>Sinusitis and allergic rhinitis management</li>
-      <li>Tonsillitis and throat infection treatment</li>
-      <li>Snoring and sleep apnea evaluation</li>
-      <li>Endoscopic nasal and throat examination</li>
-    </ul>
-  </section>
-
-  <section class="testimonials">
-    <h2>Patient Testimonials</h2>
-    <blockquote>
-      "The team at Eritage ENT Care provided exceptional care. My hearing has improved significantly, and I feel more confident."
-      <footer>- Sarah N., Patient</footer>
-    </blockquote>
-    <blockquote>
-      "I was struggling with chronic sinus issues for years. After treatment here, I can finally breathe freely again."
-      <footer>- John M., Patient</footer>
-    </blockquote>
-  </section>
-
-  <section class="contact">
-    <h2>Contact & Location</h2>
-    <p>
-      📍 Entebbe Town, Uganda<br>
-      📞 +256 705 532 919<br>
-      ✉️ <a href="mailto:heritageentcare@gmail.com">heritageentcare@gmail.com</a>
-    </p>
-    <a href="https://maps.google.com" target="_blank">View on Google Maps</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Eritage ENT Care – Entebbe. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
+export default Hero;
